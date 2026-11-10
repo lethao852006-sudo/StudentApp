@@ -1,45 +1,68 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="16dp">
+    android:background="#F5F5F5">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hồ Sơ Chi Tiết Sinh Viên"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        android:textColor="#1E293B" />
-
-    <com.google.android.material.card.MaterialCardView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="14dp"
-        app:cardCornerRadius="10dp"
-        app:strokeColor="#CBD5E1"
-        app:strokeWidth="1dp">
+        android:orientation="vertical"
+        android:padding="24dp">
 
-        <LinearLayout
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:padding="16dp">
+            android:text="THÔNG TIN CHI TIẾT SINH VIÊN"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#263B65"
+            android:gravity="center"
+            android:padding="16dp" />
 
-            <TextView
-                android:id="@+id/tvStudentDetail"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Thông tin sinh viên sẽ hiển thị tại đây"
-                android:textColor="#1E293B"
-                android:textSize="16sp"
-                android:lineSpacingExtra="8dp" />
+        <TextView
+            android:id="@+id/tvStudentId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mã sinh viên:"
+            android:textSize="18sp"
+            android:textColor="#222222"
+            android:padding="12dp" />
 
-        </LinearLayout>
+        <TextView
+            android:id="@+id/tvStudentName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Họ và tên:"
+            android:textSize="18sp"
+            android:textColor="#222222"
+            android:padding="12dp" />
 
-    </com.google.android.material.card.MaterialCardView>
+        <TextView
+            android:id="@+id/tvStudentClass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lớp:"
+            android:textSize="18sp"
+            android:textColor="#222222"
+            android:padding="12dp" />
 
-</LinearLayout>
+        <TextView
+            android:id="@+id/tvStudentGpa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="GPA:"
+            android:textSize="18sp"
+            android:textColor="#222222"
+            android:padding="12dp" />
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="QUAY LẠI DANH SÁCH"
+            android:layout_marginTop="24dp" />
+
+    </LinearLayout>
+
+</ScrollView>
